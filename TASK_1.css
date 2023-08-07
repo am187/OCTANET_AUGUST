@@ -22,21 +22,6 @@
   padding: 5rem 1rem;
 }
 
-.section__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
-
-.section__title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
 a {
   text-decoration: none;
 }
@@ -195,8 +180,7 @@ header {
   gap: 2rem;
 }
 
-.arrivals__image,
-.product__image {
+.arrivals__image {
   display: flex;
 }
 
@@ -204,75 +188,22 @@ header {
   grid-area: 1/1/2/3;
 }
 
-.banner__2 {
-  background-image: url("images/banner-bg-1.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.banner__2__container {
-  color: var(--white);
-  text-align: center;
-}
-
-.banner__2__container p {
-  font-size: 1.5rem;
-}
-
-.banner__2__container h2 {
-  font-size: 5rem;
-  font-weight: 500;
-}
-
-.countdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.square {
-  width: 80px;
-  height: 80px;
-  background-color: var(--primary-color);
-  display: grid;
-  place-content: center;
-  border-radius: 5px;
-}
-
-.banner__2__container button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  color: var(--primary-color);
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--white);
-  cursor: pointer;
-}
-
-.seller__nav,
-.product__nav {
+.seller__nav {
   font-size: 2rem;
   color: var(--text-dark);
   cursor: pointer;
 }
 
-.seller__nav span,
-.product__nav span {
+.seller__nav span {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.seller__nav span:hover,
-.product__nav span:hover {
+.seller__nav span:hover {
   color: var(--primary-color);
 }
 
-.seller__grid,
-.product__grid {
+.seller__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -315,14 +246,6 @@ header {
 
 .banner__3__container h2 {
   font-size: 3rem;
-}
-
-.product__image:nth-child(1) {
-  grid-area: 1/1/3/3;
-}
-
-.product__image:nth-child(2) {
-  grid-area: 1/3/2/5;
 }
 
 .blog__grid {
@@ -416,35 +339,13 @@ footer {
     gap: 1rem;
   }
 
-  .seller__grid,
-  .product__grid {
+  .seller__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
-
-  .product__image:nth-child(1) {
-    grid-area: unset;
-  }
-
-  .product__image:nth-child(2) {
-    grid-area: 1/1/2/4;
   }
 }
 
 @media (width < 600px) {
-  .banner__2__container h2 {
-    font-size: 4rem;
-  }
-
-  .seller__grid,
-  .product__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .product__image:nth-child(2) {
-    grid-area: unset;
-  }
-
   .blog__grid {
     grid-template-columns: repeat(1, 1fr);
   }
